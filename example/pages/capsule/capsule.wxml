@@ -1,0 +1,18 @@
+<!--pages/capsule/capsule.wxml-->
+<import src="/OneUI/capsule/index.wxml" />
+
+<view class='container'>
+
+  <view class='capsule-wrap'>
+    <view class='one-title'>普通胶囊</view>
+    <template is="capsule" data="{{leftText: '限购', rightText: '一折'}}"></template>
+  </view>
+
+  <view class='capsule-wrap'>
+    <view class='one-title'>自定义胶囊</view>
+    <view>
+      {scale,color,leftText,rightText}
+    </view>
+    <template is="capsule" data="{{scale: '1', color: '#04be02', leftText: '限购', rightText: '一折'}}"></template>
+  </view>
+</view>

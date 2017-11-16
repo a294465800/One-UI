@@ -1,0 +1,12 @@
+<template name="capsule">
+  <view class="__one-capsule" style='transform: scale({{scale || "0.8"}})'>
+    <block wx:if="{{color}}">
+      <view class="__one-capsule-left" style="background: {{ color }}; border-color: {{ color }}">{{ leftText }}</view>
+      <view class="'__one-capsule-right" style="color: {{ color }}; border-color: {{ color }}">{{ rightText }}</view>
+    </block>
+    <block wx:else>
+      <view class="__one-capsule-left">{{ leftText }}</view>
+      <view class="'__one-capsule-right">{{ rightText }}</view>
+    </block>
+  </view>
+</template>
