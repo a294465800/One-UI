@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/tab/tab",
+    "pages/list/list",
     "pages/capsule/capsule",
     "pages/button/button",
     "pages/badge/badge",

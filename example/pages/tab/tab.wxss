@@ -1,0 +1,27 @@
+/* pages/tab/tab.wxss */
+
+.__one-tab {
+  background-color: #fff;
+  box-shadow: 0 1px 1px #ccc;
+  font-size: 14px;
+}
+
+.__one-tab-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.__one-tab-item {
+  flex: 1;
+  text-align: center;
+}
+
+.__one-tab-item-name {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+}
+
+.__one-tab-item-name.active {
+  border-bottom: 2px solid #ccc;
+}
