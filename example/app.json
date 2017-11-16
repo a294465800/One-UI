@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/tab/tab",
-    "pages/list/list",
     "pages/capsule/capsule",
+    "pages/list/list",
     "pages/button/button",
     "pages/badge/badge",
     "pages/index/index"

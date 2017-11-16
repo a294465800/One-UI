@@ -1,25 +1,21 @@
 <!--pages/tab/tab.wxml-->
+<import src="/OneUI/tab/index.wxml" />
 <view class='container'>
-  <view class='tab-wrap'>
+  <view class='title-wrap'>
     <view class='one-title'>Tab 导航</view>
-    <view class='__one-tab'>
-      <view class='__one-tab-wrap'>
-        <template is="one-tab-list" data="{{tab, tabName}}">
-        </template>
-      </view>
-    </view>
+  </view>
+  <view class='tab-wrap'>
+    <template is="one-tab" data="{{tab: tab1, tabName:'tab1'}}"></template>
+  </view>
+  <view class='tab-wrap'>
+    <template is="one-tab" data="{{tab: tab2, tabName:'tab2'}}"></template>
+  </view>
+  <view class='tab-wrap'>
+    <template is="one-tab" data="{{tab: tab3, tabName:'tab2'}}"></template>
+  </view>
+  <view class='title-wrap'>
+    <view class='one-title'>用法说明</view>
+    <view>必选参数： tab(object), tabName(string)</view>
+    <view>tab: {list(array), scroll(boolean), fixed(boolean), height(number), fontSize(number), color(string)}</view>
   </view>
 </view>
-
-<!-- tab导航列表模版 -->
-<template name="one-tab-list">
-  <view class='__one-tab-item' wx:for="{{tab.list}}" wx:for-item="tabItem" wx:key="id">
-    <block wx:if="{{tab.selected == tabItem.id}}">
-      <view class='__one-tab-item-name active' style='border-color:{{tab.color}};color:{{tab.color}}'>{{tabItem.name}}</view>
-    </block>
-    <block wx:else>
-      <view class='__one-tab-item-name' data-id='{{tabItem.id}}' data-tab-name='{{tabName}}' catchtap='tabSwitch'>{{tabItem.name}}</view>
-    </block>
-  </view>
-</template>
-<!-- /tab导航列表模版 -->
