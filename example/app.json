@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/badge/badge",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "OneUI",
+    "navigationBarTextStyle": "black"
+  }
+}

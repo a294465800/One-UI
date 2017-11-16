@@ -1,0 +1,51 @@
+/* pages/badge/badge.wxss */
+
+.example {
+  background-color: #eee;
+  padding: 30rpx;
+  border-radius: 5px;
+}
+
+.one-badge-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.one-badge {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 12px;
+  font-family: tahoma;
+  height: 1.6em;
+  min-width: 1.8em;
+  line-height: 1.6em;
+  padding: 0 0.4em;
+  border-radius: 0.8em;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.one-badge.primary {
+  background-color: #26a2ff;
+}
+
+.one-badge.error {
+  background-color: #f44336;
+}
+
+.one-badge.success {
+  background-color: #4caf50;
+}
+
+.one-badge.warning {
+  background-color: #ffc107;
+}
+
+.one-badge.small {
+  font-size: 10px;
+}
+
+.one-badge.large {
+  font-size: 13px;
+}

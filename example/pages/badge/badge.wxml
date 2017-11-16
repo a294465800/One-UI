@@ -1,0 +1,23 @@
+<!--pages/badge/badge.wxml-->
+<view class='container'>
+  <view class='one-badge-wrap example'>
+    <view class='one-badge primary small'>99+</view>
+    <view class='one-badge primary'>99+</view>
+    <view class='one-badge primary large'>99+</view>
+  </view>
+  <view class='one-badge-wrap example'>
+    <view class='one-badge error small'>99+</view>
+    <view class='one-badge error'>99+</view>
+    <view class='one-badge error large'>99+</view>
+  </view>
+  <view class='one-badge-wrap example'>
+    <view class='one-badge success small'>99+</view>
+    <view class='one-badge success'>99+</view>
+    <view class='one-badge success large'>99+</view>
+  </view>
+  <view class='one-badge-wrap example'>
+    <view class='one-badge warning small'>99+</view>
+    <view class='one-badge warning'>99+</view>
+    <view class='one-badge warning large'>99+</view>
+  </view>
+</view>
