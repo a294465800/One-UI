@@ -1,0 +1,41 @@
+<!--pages/button/button.wxml-->
+<view class='container'>
+
+  <view class='one-btn-normal'>
+    <view class='one-title'>普通按钮</view>
+    <button class='one-btn primary'>primary</button>
+    <button class='one-btn success'>success</button>
+    <button class='one-btn error'>error</button>
+    <button class='one-btn warning'>warning</button>
+    <button class='one-btn black'>black</button>
+    <button class='one-btn hollow'>hollow</button>
+  </view>
+  <view class='one-btn-circle'>
+    <view class='one-title'>圆角按钮</view>
+    <button class='one-btn circle primary'>primary</button>
+    <button class='one-btn circle success'>success</button>
+    <button class='one-btn circle error'>error</button>
+    <button class='one-btn circle warning'>warning</button>
+    <button class='one-btn circle black'>black</button>
+    <button class='one-btn circle hollow'>hollow</button>
+  </view>
+  <view class='one-btn-small'>
+    <view class='one-title'>自适应按钮</view>
+    <button class='one-btn small primary'>primary</button>
+    <button class='one-btn small success'>success</button>
+    <button class='one-btn small error'>error</button>
+    <button class='one-btn small warning'>warning</button>
+    <button class='one-btn small black'>black</button>
+    <button class='one-btn small hollow'>hollow</button>
+  </view>
+  <view class='one-btn-mini'>
+    <view class='one-title'>迷你按钮</view>
+    <button class='one-btn mini primary'>primary</button>
+    <button class='one-btn mini success'>success</button>
+    <button class='one-btn mini error'>error</button>
+    <button class='one-btn mini warning'>warning</button>
+    <button class='one-btn mini black'>black</button>
+    <button class='one-btn mini hollow'>hollow</button>
+  </view>
+
+</view>

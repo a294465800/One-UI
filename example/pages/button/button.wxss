@@ -1,0 +1,91 @@
+/* pages/button/button.wxss */
+
+.container {
+  /* padding: 100px; */
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+.one-title {
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.one-btn-small button, .one-btn-mini button {
+  margin: 5px;
+}
+
+.one-btn {
+  box-sizing: border-box;
+  position: relative;
+  font-size: 18px;
+  font-family: tahoma;
+  line-height: 2.5;
+  text-decoration: none;
+  border-radius: 3px;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  border: 1px solid transparent;
+}
+
+.one-btn::after {
+  display: none;
+}
+
+.one-btn.primary:active {
+  background-color: #2595e8;
+}
+
+.one-btn.success:active {
+  background-color: #04ab02;
+}
+
+.one-btn.error:active {
+  background-color: #d74747;
+}
+
+.one-btn.warning:active {
+  background-color: #f3b90a;
+}
+
+.one-btn.black:active {
+  background-color: #000;
+}
+
+.one-btn.hollow:active {
+  background-color: #f7f7f7;
+}
+
+button[disabled].one-btn {
+  color: #999 !important;
+  background: #f8f8f8 !important;
+  border-color: #e5e5e5 !important;
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+}
+
+.one-btn.circle {
+  border-radius: 30px;
+}
+
+.one-btn.small {
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 3px;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.one-btn.mini {
+  font-size: 10px;
+  line-height: 2;
+  display: inline-block;
+  border-radius: 3px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}

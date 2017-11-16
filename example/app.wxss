@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import './pages/common/common.wxss';
 
 view {
   box-sizing: border-box;

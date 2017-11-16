@@ -20,4 +20,14 @@
     <view class='one-badge warning'>99+</view>
     <view class='one-badge warning large'>99+</view>
   </view>
+  <view class='one-badge-wrap example'>
+    <view class='one-badge black small'>99+</view>
+    <view class='one-badge black'>99+</view>
+    <view class='one-badge black large'>99+</view>
+  </view>
+  <view class='one-badge-wrap example'>
+    <view class='one-badge hallow small'>99+</view>
+    <view class='one-badge hallow'>99+</view>
+    <view class='one-badge hallow large'>99+</view>
+  </view>
 </view>

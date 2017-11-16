@@ -1,0 +1,37 @@
+/* 全局颜色标准 */
+
+.primary {
+  background-color: #26a2ff;
+  border-color: #26a2ff;
+  color: #fff;
+}
+
+.error {
+  background-color: #ef4f4f;
+  border-color: #ef4f4f;
+  color: #fff;
+}
+
+.success {
+  background-color: #04be02;
+  border-color: #04be02;
+  color: #fff;
+}
+
+.warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #fff;
+}
+
+.black {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.hollow {
+  background-color: #fff;
+  border-color: #333 !important;
+  color: #333;
+}
