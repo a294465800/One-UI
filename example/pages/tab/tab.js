@@ -1,6 +1,5 @@
 // pages/tab/tab.js
 const One = require('../../OneUI/index');
-console.log(One)
 Page(Object.assign({}, One.Tab, {
 
   data: {

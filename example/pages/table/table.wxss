@@ -1,0 +1,20 @@
+/* pages/table/table.wxss */
+
+.table-wrap {
+  margin-bottom: 30px;
+}
+
+/* 组件样式 */
+
+.__one-table {
+  display: table;
+}
+
+.__one-table-tr {
+  font-size: 15px;
+}
+
+.__one-table-head {
+  display: table-header-group;
+  /* border-bottom: 1px solid */
+}

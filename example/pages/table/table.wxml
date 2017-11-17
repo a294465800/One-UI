@@ -1,0 +1,16 @@
+<!--pages/table/table.wxml-->
+<view class='container'>
+  <view class='one-title'>Table 表格</view>
+  <view class='table-wrap'>
+    <view class='one-title'>基本样式</view>
+    <view class='__one-table'>
+      <view class='__one-table-head'>
+        <view class='__one-table-tr'>
+          <view class='__one-table-th' wx:for="{{table.head}}" wx:for-item="thItem" wx:key="{{thItem}}">{{thItem}}</view>
+        </view>
+      </view>
+      <view class='__one-table-body'></view>
+      <view class='__one-table-foot'></view>
+    </view>
+  </view>
+</view>
