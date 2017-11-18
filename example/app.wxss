@@ -1,9 +1,9 @@
 /**app.wxss**/
 @import './pages/common/common.wxss';
 
-view {
+/* view {
   box-sizing: border-box;
-}
+} */
 
 .container {
   min-height: 100vh;
@@ -29,4 +29,11 @@ view {
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 10px;
+}
+
+.one-subtitle {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

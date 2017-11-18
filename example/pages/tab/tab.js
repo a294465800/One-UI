@@ -1,6 +1,7 @@
 // pages/tab/tab.js
 const One = require('../../OneUI/index');
-Page(Object.assign({}, One.Tab, {
+console.log(One)
+Page(Object.assign({}, One.Table, {
 
   data: {
     tab1: {
