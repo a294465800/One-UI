@@ -1,4 +1,5 @@
 <!--pages/badge/badge.wxml-->
+<import src="/OneUI/table/index.wxml" />
 <view class='container'>
   <view class='one-badge-wrap example'>
     <view class='one-badge primary small'>99+</view>
@@ -26,8 +27,13 @@
     <view class='one-badge black large'>99+</view>
   </view>
   <view class='one-badge-wrap example'>
-    <view class='one-badge hallow small'>99+</view>
-    <view class='one-badge hallow'>99+</view>
-    <view class='one-badge hallow large'>99+</view>
+    <view class='one-badge hollow small'>99+</view>
+    <view class='one-badge hollow'>99+</view>
+    <view class='one-badge hollow large'>99+</view>
+  </view>
+  <view class='table-wrap'>
+    <view class='one-title'>使用说明</view>
+    <view class='one-subtitle'>直接使用 class 即可,颜色可选 primary, error, success, warning, black, hollow,直接添加 class</view>
+    <template is="one-table" data="{{table: badgeObj}}"></template>
   </view>
 </view>

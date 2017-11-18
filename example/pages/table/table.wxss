@@ -1,4 +1,5 @@
 /* pages/table/table.wxss */
+@import '/OneUI/table/index.wxss';
 
 .container {
   background-color: #fff;
@@ -6,103 +7,4 @@
 
 .table-wrap {
   margin-bottom: 30px;
-}
-
-/* 组件样式 */
-
-/* 基础样式 */
-
-.__one-table {
-  display: table;
-  width: 100%;
-  max-width: 100%;
-  position: relative;
-  box-sizing: border-box;
-  background-color: #fff;
-  margin-bottom: 30px;
-}
-
-.__one-table-head {
-  display: table-header-group;
-  vertical-align: middle;
-  font-weight: 600;
-  color: #878d99;
-}
-
-.__one-table-head .__one-table-th {
-  font-size: 15px;
-}
-
-.__one-table-body {
-  display: table-row-group;
-  color: #5a5e66;
-}
-
-.__one-table-tr {
-  display: table-row;
-}
-
-.__one-table-tr.active {
-  background-color: #f5f7fa;
-}
-
-.__one-table-th, .__one-table-td {
-  display: table-cell;
-  word-break: break-all;
-  box-sizing: border-box;
-  position: relative;
-  padding: 5px 5px;
-  vertical-align: middle;
-  border-bottom: 1px solid #e6ebf5;
-  font-size: 14px;
-  max-width: 80px;
-}
-
-.__one-table-empty {
-  font-size: 14px;
-  color: #878d99;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 30%);
-}
-
-/* 滑动 */
-
-.__one-table-scroll {
-  height: auto;
-}
-
-.__one-table-scroll .__one-table {
-  width: auto;
-}
-
-.__one-table-scroll .__one-table-th, .__one-table-scroll .__one-table-td {
-  min-width: 100px;
-  max-width: 150px;
-}
-
-/* 对齐方式 */
-
-.__one-table.center {
-  text-align: center;
-}
-
-.__one-table.right {
-  text-align: right;
-}
-
-.__one-table.left {
-  text-align: left;
-}
-
-/* 加边框 */
-
-.__one-table.border {
-  border-top: 1px solid #e6ebf5;
-  border-left: 1px solid #e6ebf5;
-}
-
-.__one-table.border .__one-table-th, .__one-table.border .__one-table-td {
-  border-right: 1px solid #e6ebf5;
-  border-bottom: 1px solid #e6ebf5;
 }

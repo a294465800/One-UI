@@ -33,5 +33,5 @@
 .hollow {
   background-color: #fff;
   border-color: #333 !important;
-  color: #333;
+  color: #333 !important;
 }

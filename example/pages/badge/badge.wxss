@@ -1,4 +1,6 @@
 /* pages/badge/badge.wxss */
+@import '/OneUI/table/index.wxss';
+@import '/OneUI/badge/index.wxss';
 
 .example {
   background-color: #eee;
@@ -9,27 +11,4 @@
 .one-badge-wrap {
   display: flex;
   justify-content: space-around;
-}
-
-.one-badge {
-  box-sizing: border-box;
-  display: inline-block;
-  font-size: 12px;
-  font-family: tahoma;
-  height: 1.6em;
-  min-width: 1.8em;
-  line-height: 1.6em;
-  padding: 0 0.4em;
-  border-radius: 0.8em;
-  white-space: nowrap;
-  text-align: center;
-  border: 1px solid transparent;
-}
-
-.one-badge.small {
-  font-size: 10px;
-}
-
-.one-badge.large {
-  font-size: 13px;
 }

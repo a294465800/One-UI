@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/table/table",
     "pages/tab/tab",
     "pages/capsule/capsule",
     "pages/list/list",
     "pages/button/button",
-    "pages/badge/badge",
-    "pages/index/index"
+    "pages/badge/badge"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,21 +1,24 @@
 <!--pages/tab/tab.wxml-->
 <import src="/OneUI/tab/index.wxml" />
+<import src="/OneUI/table/index.wxml" />
 <view class='container'>
   <view class='title-wrap'>
     <view class='one-title'>Tab 导航</view>
   </view>
   <view class='tab-wrap'>
-    <template is="one-tab" data="{{tab: tab1, tabName:'tab1'}}"></template>
+    <template is="one-tab" data="{{tab: tab1}}"></template>
   </view>
   <view class='tab-wrap'>
-    <template is="one-tab" data="{{tab: tab2, tabName:'tab2'}}"></template>
+    <template is="one-tab" data="{{tab: tab2}}"></template>
   </view>
   <view class='tab-wrap'>
-    <template is="one-tab" data="{{tab: tab3, tabName:'tab2'}}"></template>
+    <template is="one-tab" data="{{tab: tab3}}"></template>
   </view>
-  <view class='title-wrap'>
-    <view class='one-title'>用法说明</view>
-    <view>必选参数： tab(object), tabName(string)</view>
-    <view>tab: {list(array), scroll(boolean), fixed(boolean), height(number), fontSize(number), color(string)}</view>
+  <view class='table-wrap'>
+    <view class='one-title'>使用说明</view>
+    <view class='one-subtitle'>模板组件传入唯一对象 { tab }</view>
+    <template is="one-table" data="{{table: tabObj}}"></template>
+    <view class='one-subtitle'>事件</view>
+    <template is="one-table" data="{{table: tabEvent}}"></template>
   </view>
 </view>

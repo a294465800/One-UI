@@ -63,6 +63,7 @@
 
 .__one-table-scroll .__one-table {
   width: auto;
+  min-width: 100%;
 }
 
 .__one-table-scroll .__one-table-th, .__one-table-scroll .__one-table-td {
