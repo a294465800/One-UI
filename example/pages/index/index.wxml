@@ -3,6 +3,7 @@
   <view class='one-title'>CSS 样式</view>
   <navigator url='/pages/badge/badge'>Badge 徽章</navigator>
   <navigator url='/pages/button/button'>Button 按钮</navigator>
+  <navigator url='/pages/icon/icon'>Icon 图标</navigator>
   <view class='one-title'>Template 组件</view>
   <navigator url='/pages/capsule/capsule'>Capsule 胶囊</navigator>
   <navigator url='/pages/tab/tab'>Tab 导航条</navigator>

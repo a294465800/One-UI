@@ -1,0 +1,10 @@
+<!--pages/icon/icon.wxml-->
+<view class='container'>
+  <view class='one-title'>Icon</view>
+  <view class='one-icon-wrap'>
+    <view class='one-icon-item' wx:for="{{oneIcons}}" wx:key="{{item}}">
+      <view class='one-icon {{item}}'></view>
+      <view class='one-icon-item-class'>{{item}}</view>
+    </view>
+  </view>
+</view>

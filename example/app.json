@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/icon/icon",
     "pages/index/index",
     "pages/table/table",
     "pages/tab/tab",
