@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/icon/icon",
+    "pages/list/list",
     "pages/index/index",
+    "pages/icon/icon",
     "pages/table/table",
     "pages/tab/tab",
     "pages/capsule/capsule",
-    "pages/list/list",
     "pages/button/button",
     "pages/badge/badge"
   ],

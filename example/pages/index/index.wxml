@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class='contanier'>
+<view class='container'>
   <view class='one-title'>CSS 样式</view>
   <navigator url='/pages/badge/badge'>Badge 徽章</navigator>
   <navigator url='/pages/button/button'>Button 按钮</navigator>

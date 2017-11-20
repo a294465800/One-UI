@@ -1,4 +1,82 @@
 <!--pages/list/list.wxml-->
+
+<import src="/OneUI/tab/index.wxml" />
+
 <view class='container'>
-  <view class='one-title'>待定···</view>
+  <template is="one-tab" data="{{tab: tab}}"></template>
+
+  <view class='one-list-wrap'>
+    <!--主题一  -->
+    <view class='__one-list-theme-one' hidden='{{!(currentIndex == 0)}}'>
+      <view class='__one-list-item' wx:for="{{list}}" wx:for-item="listItem" wx:key="id">
+        <image class='__one-list-item-img' mode='aspectFit' src='{{listItem.img}}'></image>
+        <view class='__one-list-item-content'>
+          <view class='__one-list-item-title'>{{listItem.title}}</view>
+          <view class='__one-list-item-info'>
+            <view class='__one-list-item-prices'>
+              <view class='__one-list-item-price'>￥{{listItem.price}}</view>
+              <view class='__one-list-item-old-price'>￥{{listItem.oldPrice}}</view>
+            </view>
+            <view class='__one-list-item-subtitle'>{{listItem.subTitle}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--主题一  -->
+
+    <!--主题二  -->
+    <view class='__one-list-theme-two' hidden='{{!(currentIndex == 1)}}'>
+      <view class='__one-list-item' wx:for="{{list}}" wx:for-item="listItem" wx:key="id">
+        <image class='__one-list-item-img' mode='aspectFit' src='{{listItem.img}}'></image>
+        <view class='__one-list-item-content'>
+          <view class='__one-list-item-title'>{{listItem.title}}</view>
+          <view class='__one-list-item-info'>
+            <view class='__one-list-item-prices'>
+              <view class='__one-list-item-price'>￥{{listItem.price}}</view>
+              <view class='__one-list-item-old-price'>￥{{listItem.oldPrice}}</view>
+            </view>
+            <view class='__one-list-item-subtitle'>{{listItem.subTitle}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--/主题二  -->
+
+    <!--主题三  -->
+    <view class='__one-item-theme-three' hidden='{{!(currentIndex == 2)}}'>
+      <view class='__one-list-item' wx:for="{{list1}}" wx:for-item="listItem" wx:key="id">
+        <image class='__one-list-item-img' mode='aspectFit' src='{{listItem.img}}'></image>
+        <view class='__one-list-item-content'>
+          <view class='__one-list-item-title'>{{listItem.title}}</view>
+          <view class='__one-list-item-info'>
+            <view class='__one-list-item-prices'>
+              <view class='__one-list-item-price'>￥{{listItem.price}}</view>
+              <view class='__one-list-item-old-price'>￥{{listItem.oldPrice}}</view>
+            </view>
+            <view class='__one-list-item-subtitle'>{{listItem.subTitle}}</view>
+          </view>
+          <view class='__one-list-item-remark'>{{listItem.remark}}</view>
+        </view>
+      </view>
+    </view>
+    <!--/主题三  -->
+
+    <!--主题四 -->
+    <view class='__one-list-theme-four' hidden='{{!(currentIndex == 3)}}'>
+      <view class='__one-list-item' wx:for="{{list}}" wx:for-item="listItem" wx:key="id">
+        <image class='__one-list-item-img' mode='aspectFit' src='{{listItem.img}}'></image>
+        <view class='__one-list-item-content'>
+          <view class='__one-list-item-title'>{{listItem.title}}</view>
+          <view class='__one-list-item-info'>
+            <view class='__one-list-item-prices'>
+              <view class='__one-list-item-price'>￥{{listItem.price}}</view>
+              <view class='__one-list-item-old-price'>￥{{listItem.oldPrice}}</view>
+            </view>
+            <view class='__one-list-item-subtitle'>{{listItem.subTitle}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--主题四 -->
+  </view>
 </view>
