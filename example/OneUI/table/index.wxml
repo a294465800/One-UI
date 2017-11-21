@@ -29,7 +29,7 @@
 <template name="one-table-body">
   <block wx:if="{{table.body.length}}">
     <view class='__one-table-body'>
-      <view class='__one-table-tr {{table.currentIndex === bodyIndex?"active":""}}' wx:for="{{table.body}}" wx:for-item="bodyItem" wx:for-index="bodyIndex" wx:key="{{table.rowKey?bodyItem[table.rowKey]:bodyItem.id}}" catchtap='_handleRowActive' data-table-name='{{table.tableName}}'
+      <view class='__one-table-tr {{table.currentIndex === bodyIndex?"active":""}}' wx:for="{{table.body}}" wx:for-item="bodyItem" wx:for-index="bodyIndex" wx:key="{{table.rowKey?bodyItem[table.rowKey]:bodyItem.id}}" catchtap='_handleOneTableRowActive' data-table-name='{{table.tableName}}'
         data-index='{{bodyIndex}}'>
         <block wx:if="{{table.head[0] == '#'}}">
           <view class='__one-table-td'>{{bodyIndex}}</view>

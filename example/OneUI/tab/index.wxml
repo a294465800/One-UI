@@ -1,3 +1,4 @@
+
 <template name="one-tab">
   <view class='__one-tab {{tab.fixed?"__one-tab-fixed":""}}' style='font-size: {{tab.fontSize}}px'>
     <block wx:if="{{tab.scroll}}">

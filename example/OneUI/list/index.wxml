@@ -1,0 +1,81 @@
+<!--主题一  -->
+<template name="one-list-theme-one">
+  <view class='__one-list-theme-one'>
+    <view class='__one-list-item' catchtap='_handleOneListClick' data-list-name="{{list.listName}}" data-index='{{index}}' wx:for="{{list.list}}" wx:for-item="listItem" wx:key="{{list.key?list.key:listItem.id}}">
+      <image class='__one-list-item-img' mode='aspectFit' src='{{listItem[list.listKey.img]}}'></image>
+      <view class='__one-list-item-content'>
+        <view class='__one-list-item-title'>{{listItem[list.listKey.title]}}</view>
+        <view class='__one-list-item-info'>
+          <view class='__one-list-item-prices'>
+            <view class='__one-list-item-price'>{{priceFormat?priceFormat(listItem[list.listKey.price]): "￥" + listItem[list.listKey.price]}}</view>
+            <view class='__one-list-item-old-price'>{{oldPriceFormat?oldPriceFormat(listItem[list.listKey.oldPrice]): "￥" + listItem[list.listKey.oldPrice]}}</view>
+          </view>
+          <view class='__one-list-item-subtitle'>{{listItem[list.listKey.subTitle]}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+<!--主题一  -->
+
+
+<!--主题二  -->
+<template name="one-list-theme-two">
+  <view class='__one-list-theme-two'>
+    <view class='__one-list-item' catchtap='_handleOneListClick' data-list-name="{{list.listName}}" data-index='{{index}}' wx:for="{{list.list}}" wx:for-item="listItem" wx:key="{{list.key?list.key:listItem.id}}">
+      <image class='__one-list-item-img' mode='aspectFit' src='{{listItem[list.listKey.img]}}'></image>
+      <view class='__one-list-item-content'>
+        <view class='__one-list-item-title'>{{listItem[list.listKey.title]}}</view>
+        <view class='__one-list-item-info'>
+          <view class='__one-list-item-prices'>
+            <view class='__one-list-item-price'>{{priceFormat?priceFormat(listItem[list.listKey.price]): "￥" + listItem[list.listKey.price]}}</view>
+            <view class='__one-list-item-old-price'>{{oldPriceFormat?oldPriceFormat(listItem[list.listKey.oldPrice]): "￥" + listItem[list.listKey.oldPrice]}}</view>
+          </view>
+          <view class='__one-list-item-subtitle'>{{listItem[list.listKey.subTitle]}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+<!--/主题二  -->
+
+<!--主题三  -->
+<template name="one-list-theme-three">
+  <view class='__one-item-theme-three'>
+    <view class='__one-list-item' catchtap='_handleOneListClick' data-list-name="{{list.listName}}" data-index='{{index}}' wx:for="{{list.list}}" wx:for-item="listItem" wx:key="{{list.key?list.key:listItem.id}}">
+      <image class='__one-list-item-img' mode='aspectFit' src='{{listItem[list.listKey.img]}}'></image>
+      <view class='__one-list-item-content'>
+        <view class='__one-list-item-title'>{{listItem[list.listKey.title]}}</view>
+        <view class='__one-list-item-info'>
+          <view class='__one-list-item-prices'>
+            <view class='__one-list-item-price'>{{priceFormat?priceFormat(listItem[list.listKey.price]): "￥" + listItem[list.listKey.price]}}</view>
+            <view class='__one-list-item-old-price'>{{oldPriceFormat?oldPriceFormat(listItem[list.listKey.oldPrice]): "￥" + listItem[list.listKey.oldPrice]}}</view>
+          </view>
+          <view class='__one-list-item-subtitle'>{{listItem[list.listKey.subTitle]}}</view>
+        </view>
+        <view class='__one-list-item-remark'>{{listItem[list.listKey.remark]}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+<!--/主题三  -->
+
+<!--主题四 -->
+<template name="one-list-theme-four">
+  <view class='__one-list-theme-four'>
+    <view class='__one-list-item' catchtap='_handleOneListClick' data-list-name="{{list.listName}}" data-index='{{index}}' wx:for="{{list.list}}" wx:for-item="listItem" wx:key="{{list.key?list.key:listItem.id}}">
+      <image class='__one-list-item-img' mode='aspectFit' src='{{listItem[list.listKey.img]}}'></image>
+      <view class='__one-list-item-content'>
+        <view class='__one-list-item-title'>{{listItem[list.listKey.title]}}</view>
+        <view class='__one-list-item-info'>
+          <view class='__one-list-item-prices'>
+            <view class='__one-list-item-price'>{{priceFormat?priceFormat(listItem[list.listKey.price]): "￥" + listItem[list.listKey.price]}}</view>
+            <view class='__one-list-item-old-price'>{{oldPriceFormat?oldPriceFormat(listItem[list.listKey.oldPrice]): "￥" + listItem[list.listKey.oldPrice]}}</view>
+          </view>
+          <view class='__one-list-item-subtitle'>{{listItem[list.listKey.subTitle]}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+<!--主题四 -->

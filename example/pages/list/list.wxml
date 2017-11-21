@@ -1,82 +1,62 @@
 <!--pages/list/list.wxml-->
+<wxs module="m1">
+  var priceFormat = function(value) {
+    return value + '元'
+  }
+
+  var oldPriceFormat = function(value) {
+    return '$' + value
+  }
+
+  module.exports.priceFormat = priceFormat
+  module.exports.oldPriceFormat = oldPriceFormat
+</wxs>
 
 <import src="/OneUI/tab/index.wxml" />
+<import src="/OneUI/list/index.wxml" />
+<import src="/OneUI/table/index.wxml" />
 
 <view class='container'>
   <template is="one-tab" data="{{tab: tab}}"></template>
 
   <view class='one-list-wrap'>
     <!--主题一  -->
-    <view class='__one-list-theme-one' hidden='{{!(currentIndex == 0)}}'>
-      <view class='__one-list-item' wx:for="{{list}}" wx:for-item="listItem" wx:key="id">
-        <image class='__one-list-item-img' mode='aspectFit' src='{{listItem.img}}'></image>
-        <view class='__one-list-item-content'>
-          <view class='__one-list-item-title'>{{listItem.title}}</view>
-          <view class='__one-list-item-info'>
-            <view class='__one-list-item-prices'>
-              <view class='__one-list-item-price'>￥{{listItem.price}}</view>
-              <view class='__one-list-item-old-price'>￥{{listItem.oldPrice}}</view>
-            </view>
-            <view class='__one-list-item-subtitle'>{{listItem.subTitle}}</view>
-          </view>
-        </view>
-      </view>
-    </view>
-    <!--主题一  -->
+    <block wx:if="{{currentIndex == 0}}">
+      <template is="one-list-theme-one" data="{{list,priceFormat: m1.priceFormat, oldPriceFormat: m1.oldPriceFormat}}"></template>
+      <!--主题一  -->
+    </block>
 
     <!--主题二  -->
-    <view class='__one-list-theme-two' hidden='{{!(currentIndex == 1)}}'>
-      <view class='__one-list-item' wx:for="{{list}}" wx:for-item="listItem" wx:key="id">
-        <image class='__one-list-item-img' mode='aspectFit' src='{{listItem.img}}'></image>
-        <view class='__one-list-item-content'>
-          <view class='__one-list-item-title'>{{listItem.title}}</view>
-          <view class='__one-list-item-info'>
-            <view class='__one-list-item-prices'>
-              <view class='__one-list-item-price'>￥{{listItem.price}}</view>
-              <view class='__one-list-item-old-price'>￥{{listItem.oldPrice}}</view>
-            </view>
-            <view class='__one-list-item-subtitle'>{{listItem.subTitle}}</view>
-          </view>
-        </view>
-      </view>
-    </view>
-    <!--/主题二  -->
+    <block wx:elif="{{currentIndex == 1}}">
+      <template is="one-list-theme-two" data="{{list}}"></template>
+      <!--/主题二  -->
+    </block>
 
     <!--主题三  -->
-    <view class='__one-item-theme-three' hidden='{{!(currentIndex == 2)}}'>
-      <view class='__one-list-item' wx:for="{{list1}}" wx:for-item="listItem" wx:key="id">
-        <image class='__one-list-item-img' mode='aspectFit' src='{{listItem.img}}'></image>
-        <view class='__one-list-item-content'>
-          <view class='__one-list-item-title'>{{listItem.title}}</view>
-          <view class='__one-list-item-info'>
-            <view class='__one-list-item-prices'>
-              <view class='__one-list-item-price'>￥{{listItem.price}}</view>
-              <view class='__one-list-item-old-price'>￥{{listItem.oldPrice}}</view>
-            </view>
-            <view class='__one-list-item-subtitle'>{{listItem.subTitle}}</view>
-          </view>
-          <view class='__one-list-item-remark'>{{listItem.remark}}</view>
-        </view>
-      </view>
-    </view>
-    <!--/主题三  -->
+    <block wx:elif="{{currentIndex == 2}}">
+      <template is="one-list-theme-three" data="{{list: list1}}"></template>
+      <!--/主题三  -->
+    </block>
 
     <!--主题四 -->
-    <view class='__one-list-theme-four' hidden='{{!(currentIndex == 3)}}'>
-      <view class='__one-list-item' wx:for="{{list}}" wx:for-item="listItem" wx:key="id">
-        <image class='__one-list-item-img' mode='aspectFit' src='{{listItem.img}}'></image>
-        <view class='__one-list-item-content'>
-          <view class='__one-list-item-title'>{{listItem.title}}</view>
-          <view class='__one-list-item-info'>
-            <view class='__one-list-item-prices'>
-              <view class='__one-list-item-price'>￥{{listItem.price}}</view>
-              <view class='__one-list-item-old-price'>￥{{listItem.oldPrice}}</view>
-            </view>
-            <view class='__one-list-item-subtitle'>{{listItem.subTitle}}</view>
-          </view>
-        </view>
-      </view>
-    </view>
+    <block wx:elif="{{currentIndex == 3}}">
+      <template is="one-list-theme-four" data="{{list}}"></template>
+    </block>
     <!--主题四 -->
+
+    <block wx:else>
+      <view class='list-usage-wrap'>
+        <view class='one-title'>使用说明</view>
+        <view class='one-subtitle'>一共有四个主题，对应的模版名称为： one-list-theme-one、one-list-theme-two、one-list-theme-three、one-list-theme-four。模版接收三个数据： list、priceFormat、oldPriceFormat</view>
+        <view class='one-title'>list 对象</view>
+        <template is="one-table" data="{{table: listObj}}"></template>
+        <view class='one-title'>格式化数据函数</view>
+        <view class='one-subtitle'>函数的传入通过 WXS 脚本实现，具体使用方法开 example 的代码。</view>
+        <template is="one-table" data="{{table: fncObj}}"></template>
+        <view class='one-title'>Event 事件</view>
+        <view class='one-subtitle'>每个项的点击事件</view>
+        <template is="one-table" data="{{table: eventObj}}"></template>
+      </view>
+    </block>
   </view>
 </view>

@@ -8,4 +8,5 @@
   <navigator url='/pages/capsule/capsule'>Capsule 胶囊</navigator>
   <navigator url='/pages/tab/tab'>Tab 导航条</navigator>
   <navigator url='/pages/table/table'>Table 表格</navigator>
+  <navigator url='/pages/list/list'>List 列表</navigator>
 </view>

@@ -214,7 +214,7 @@ Page(Object.assign({}, One.Table, {
       body: [
         {
           id: 1,
-          name: 'handleRowActive',
+          name: 'handleOneTableRowActive',
           desc: '当某行被选中时触发该事件',
           params: 'row, index, currentIndex'
         }
@@ -228,7 +228,7 @@ Page(Object.assign({}, One.Table, {
     }
   },
 
-  handleRowActive(row, index, currentIndex) {
+  handleOneTableRowActive(row, index, currentIndex) {
     console.log(row, index, currentIndex)
   }
 
