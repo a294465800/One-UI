@@ -1,0 +1,36 @@
+<!--pages/form/form.wxml-->
+<view class='container'>
+  <view class='one-title'>input</view>
+
+  <view class='one-form-group'>
+    <label class='one-label-control'>
+      <view>姓名：</view>
+      <input class='one-input-control' placeholder='请输入姓名'></input>
+    </label>
+    <label class='one-label-control'>
+      <view>年龄：</view>
+      <input class='one-input-control' type='number' placeholder='请输入年龄'></input>
+      <view class='one-icon one-icon-arrow-thin'></view>
+    </label>
+    <label class='one-label-control'>
+      <view>地址：</view>
+      <input class='one-input-control' placeholder='请输入姓名'></input>
+    </label>
+  </view>
+  <view class='margin'></view>
+  <view class='one-form-group one-form-full'>
+    <label class='one-label-control'>
+      <view>姓名：</view>
+      <input class='one-input-control' placeholder='请输入姓名'></input>
+    </label>
+    <label class='one-label-control'>
+      <view>年龄：</view>
+      <input class='one-input-control' type='number' placeholder='请输入年龄'></input>
+      <view class='one-icon one-icon-arrow-thin'></view>
+    </label>
+    <label class='one-label-control'>
+      <view>地址：</view>
+      <input class='one-input-control' placeholder='请输入姓名'></input>
+    </label>
+  </view>
+</view>

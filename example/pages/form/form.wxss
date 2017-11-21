@@ -1,0 +1,63 @@
+/* pages/form/form.wxss */
+@import '/OneUI/icon/index.wxss';
+
+.container {
+  padding: 0;
+  padding-top: 30rpx;
+}
+
+.one-title {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.one-icon-arrow-rotate {
+  color: #ccc;
+  font-size: 10px;
+}
+
+.margin {
+  margin: 20rpx;
+}
+
+/* input 样式 */
+
+.one-form-group {
+  background-color: #fff;
+  padding: 0 30rpx;
+  font-size: 16px;
+}
+
+.one-label-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.one-label-control:last-child {
+  border-bottom: 0;
+}
+
+.one-input-control {
+  flex: 1;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 15px;
+}
+
+.one-form-full {
+  margin-right: 20rpx;
+  font-size: 15px;
+}
+
+.one-form-full {
+  padding: 0;
+  width: 100%;
+}
+
+.one-form-full .one-label-control {
+  padding: 20rpx 30rpx;
+}

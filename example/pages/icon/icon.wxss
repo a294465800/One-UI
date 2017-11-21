@@ -1,4 +1,6 @@
 /* pages/icon/icon.wxss */
+@import '/OneUI/icon/index.wxss';
+
 .container {
   padding: 30rpx;
 }
@@ -10,7 +12,8 @@
 
 .one-icon-item {
   width: 220rpx;
-  height: 220rpx;
+  /* height: 220rpx; */
+  padding-top: 5px;
   margin: 0 5rpx 20rpx;
   text-align: center;
 }
@@ -18,60 +21,4 @@
 .one-icon-item-class {
   font-size: 12px;
   color: #333;
-}
-
-/* 图标样式 */
-
-@font-face {
-  font-family: 'one-icon';
-  src: url('https://at.alicdn.com/t/font_480478_jh39mlij4ydgqfr.eot');
-  src: url('https://at.alicdn.com/t/font_480478_jh39mlij4ydgqfr.eot?#iefix') format('embedded-opentype'),
-         url('https://at.alicdn.com/t/font_480478_jh39mlij4ydgqfr.woff') format('woff'),
-         url('https://at.alicdn.com/t/font_480478_jh39mlij4ydgqfr.ttf') format('truetype'),
-         url('https://at.alicdn.com/t/font_480478_jh39mlij4ydgqfr.svg#iconfont') format('svg');
-}
-
-.one-icon {
-  display: inline-block;
-}
-
-.one-icon::before {
-  font-family: "one-icon" !important;
-  font-size: 18px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-}
-
-@keyframes rotating {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.one-icon-loading-dot::before {
-  content: '\e600';
-  animation: rotating 1.2s linear infinite;
-}
-
-.one-icon-loading-bold-dot::before {
-  content: '\e63d';
-  animation: rotating 1.2s linear infinite;
-}
-
-.one-icon-loading-circle::before {
-  content: '\eb0e';
-  animation: rotating 1.2s linear infinite;
 }

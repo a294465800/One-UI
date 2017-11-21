@@ -1,4 +1,5 @@
 /**index.wxss**/
+@import '/OneUI/icon/index.wxss';
 
 .container {
   padding: 0;
@@ -40,4 +41,8 @@ navigator:last-child {
   padding: 4px;
   display: inline-block;
   transform: rotate(45deg);
+}
+
+.one-icon-arrow-rotate {
+  color: #ccc;
 }
