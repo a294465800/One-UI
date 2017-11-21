@@ -1,6 +1,43 @@
 /**index.wxss**/
 
+.container {
+  padding: 0;
+}
+
+.navigator {
+  padding: 0 30rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.one-title {
+  padding: 20rpx 30rpx;
+  border: 0;
+}
+
 navigator {
-  font-size: 16px;
-  padding: 5px 15px;
+  font-size: 15px;
+  color: #333;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+navigator:last-child {
+  border-bottom: 0;
+}
+
+.one-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  border-color: #ddd;
+  padding: 4px;
+  display: inline-block;
+  transform: rotate(45deg);
 }

@@ -1,18 +1,22 @@
 <!--pages/capsule/capsule.wxml-->
 <import src="/OneUI/capsule/index.wxml" />
+<import src="/OneUI/table/index.wxml" />
 
 <view class='container'>
 
   <view class='capsule-wrap'>
     <view class='one-title'>普通胶囊</view>
-    <template is="one-capsule" data="{{leftText: '限购', rightText: '一折'}}"></template>
+    <template is="one-capsule" data="{{options:options1}}"></template>
   </view>
 
   <view class='capsule-wrap'>
     <view class='one-title'>自定义胶囊</view>
-    <view>
-      {scale,color,leftText,rightText}
-    </view>
-    <template is="one-capsule" data="{{scale: '1', color: '#04be02', leftText: '限购', rightText: '一折'}}"></template>
+    <template is="one-capsule" data="{{options:options2}}"></template>
+  </view>
+
+  <view class='capsule-wrap'>
+    <view class='one-title'>使用说明</view>
+    <view class='one-subtitle'>模版名称 one-table，传入唯一参数：options 对象</view>
+    <template is="one-table" data="{{table:usage}}"></template>
   </view>
 </view>
