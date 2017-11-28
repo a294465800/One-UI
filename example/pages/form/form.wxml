@@ -1,7 +1,8 @@
 <!--pages/form/form.wxml-->
 <view class='container'>
-  <view class='one-title'>基础样式</view>
 
+  <!--基础样式  -->
+  <view class='one-title'>基础样式</view>
   <view class='one-form-group'>
     <label class='one-label-control'>
       <view>姓名：</view>
@@ -21,7 +22,9 @@
       <switch/>
     </label>
   </view>
+
   <view class='margin'></view>
+
   <view class='one-form-group one-form-full'>
     <label class='one-label-control'>
       <view>姓名：</view>
@@ -43,6 +46,9 @@
     </label>
   </view>
   <view class='one-form-tips'>底部文字说明</view>
+  <!--/基础样式  -->
+
+  <!--表单报错  -->
   <view class='one-title'>表单报错</view>
   <view class='one-form-group'>
     <label class='one-label-control error'>
@@ -50,6 +56,9 @@
       <input class='one-input-control' placeholder='请输入姓名'></input>
     </label>
   </view>
+  <!--/表单报错  -->
+
+  <!--结合 one-btn  -->
   <view class='one-title'>使用 one-btn </view>
   <view class='one-form-group one-form-full'>
     <label class='one-label-control'>
@@ -58,6 +67,9 @@
       <button class='one-btn mini primary'>one-btn</button>
     </label>
   </view>
+  <!--/结合 one-btn  -->
+
+  <!--文本域  -->
   <view class='one-title'>文本域</view>
   <view class='one-form-group one-form-full'>
     <label class='one-label-control one-textarea'>
@@ -74,4 +86,6 @@
       </view>
     </label>
   </view>
+  <!--文本域  -->
+
 </view>

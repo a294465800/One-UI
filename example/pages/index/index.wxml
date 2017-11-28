@@ -10,6 +10,10 @@
       <view>Button 按钮</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
+    <navigator url='/pages/form/form'>
+      <view>Form 表单</view>
+      <view class='one-icon one-icon-arrow-rotate'></view>
+    </navigator>
     <navigator url='/pages/icon/icon'>
       <view>Icon 图标</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
