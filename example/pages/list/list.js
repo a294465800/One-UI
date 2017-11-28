@@ -256,8 +256,8 @@ Page(Object.assign({}, One.Tab, One.List, One.Table, {
       scroll: true,
       border: false,
       align: 'left'
-    }, 
-    
+    },
+
     eventObj: {
       tableName: 'eventObj',
       head: [

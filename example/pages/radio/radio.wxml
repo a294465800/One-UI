@@ -1,0 +1,20 @@
+<!--pages/radio/radio.wxml-->
+<import src="/OneUI/radio/index.wxml" />
+<import src="/OneUI/table/index.wxml" />
+
+<view class='container'>
+  <view class='one-title'>单选</view>
+  <view class='radio-wrap'>
+    <template is="one-radio" data="{{radio: radio1}}"></template>
+  </view>
+
+  <view class='one-title'>自定义单选：字体大小、颜色</view>
+  <view class='radio-wrap'>
+    <template is="one-radio" data="{{radio: radio2}}"></template>
+  </view>
+  <view class='one-title'>使用说明</view>
+  <view class='one-subtitle'>传入唯一对象 {radio}</view>
+  <template is="one-table" data="{{table: radioObj}}"></template>
+  <view class='one-title'>事件</view>
+  <template is="one-table" data="{{table: radioEvent}}"></template>
+</view>

@@ -1,0 +1,30 @@
+<template name="one-radio">
+
+  <!--数组对象类型  -->
+  <block wx:if="{{radio.type === 'ArrayObject'}}">
+    <radio-group bindchange="_handleOneRadioChange" data-name="{{radio.radioName}}">
+      <label class='__one-radio-label' wx:for="{{radio.radios}}" wx:for-item="radioItem" wx:key="{{radio.radioKey.value}}">
+        <radio value='{{radioItem[radio.radioKey.value]}}' hidden>{{radioItem[radio.radioKey.title]}}</radio>
+        <view class='__one-radio-fake'>
+          <view class='__one-radio-fake-text' style='{{radio.size?("font-size:"+radio.size+"px;"):""}}{{radioItem[radio.radioKey.value] == radio.currentRadio?"color:" + (radio.color?radio.color:"#0aba07"):""}}'>{{radioItem[radio.radioKey.title]}}</view>
+          <icon color='{{radio.color}}' class='__one-radio-icon {{radioItem[radio.radioKey.value] == radio.currentRadio?"active":""}}' type='success_no_circle' size='14'></icon>
+        </view>
+      </label>
+    </radio-group>
+  </block>
+  <!--/数组对象类型  -->
+
+  <!--纯数组类型  -->
+  <block wx:else>
+    <radio-group bindchange="_handleOneRadioChange" data-name="{{radio.radioName}}">
+      <label class='__one-radio-label' wx:for="{{radio.radios}}" wx:for-item="radioItem" wx:key="radio">
+        <radio value='{{radioItem}}' hidden>{{radioItem}}</radio>
+        <view class='__one-radio-fake'>
+          <view class='__one-radio-fake-text' style='{{radio.size?("font-size:"+radio.size+"px;"):""}}{{radioItem === radio.currentRadio?"color:" + (radio.color?radio.color:"#0aba07"):""}}'>{{radioItem}}</view>
+          <icon color='{{radio.color}}' class='__one-radio-icon {{radioItem === radio.currentRadio?"active":""}}' type='success_no_circle' size='14'></icon>
+        </view>
+      </label>
+    </radio-group>
+  </block>
+  <!--/纯数组类型  -->
+</template>

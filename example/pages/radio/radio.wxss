@@ -1,0 +1,8 @@
+/* pages/radio/radio.wxss */
+@import '/OneUI/radio/index.wxss';
+@import '/OneUI/table/index.wxss';
+
+.radio-wrap {
+  background-color: #fff;
+  margin-bottom: 20px;
+}

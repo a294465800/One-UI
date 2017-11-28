@@ -25,6 +25,10 @@
       <view>Capsule 胶囊</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
+    <navigator url='/pages/radio/radio'>
+      <view>Radio 单选</view>
+      <view class='one-icon one-icon-arrow-rotate'></view>
+    </navigator>
     <navigator url='/pages/tab/tab'>
       <view>Tab 导航条</view>
       <view class='one-icon one-icon-arrow-rotate'></view>

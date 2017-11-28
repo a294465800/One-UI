@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/radio/radio",
     "pages/form/form",
     "pages/list/list",
     "pages/icon/icon",
