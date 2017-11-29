@@ -25,6 +25,10 @@
       <view>Capsule 胶囊</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
+    <navigator url='/pages/list/list'>
+      <view>List 列表</view>
+      <view class='one-icon one-icon-arrow-rotate'></view>
+    </navigator>
     <navigator url='/pages/radio/radio'>
       <view>Radio 单选</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
@@ -37,8 +41,8 @@
       <view>Table 表格</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
-    <navigator url='/pages/list/list'>
-      <view>List 列表</view>
+    <navigator url='/pages/upload/upload'>
+      <view>Upload 上传组件</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
   </view>

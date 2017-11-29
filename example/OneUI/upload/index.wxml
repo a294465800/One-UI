@@ -1,0 +1,26 @@
+<template name="one-upload">
+  <view class='__one-upload'>
+    <block wx:if="{{upload.images.length > 0}}">
+      <view class='__one-upload-img-wrap' wx:for="{{upload.images}}" wx:for-item="uploadImg" wx:for-index="uploadIndex" wx:key="{{uploadImg._oneImgUrl}}">
+        <image class='__one-upload-img __one-upload-btn' style='{{_oneUpload.formatStyle(upload.size)}}' src='{{uploadImg._oneImgUrl}}' mode='aspectFit'>
+          <icon color='{{upload.color?upload.color:"#d9534f"}}' size='18' class='__one-upload-img-cancel' type='clear' catchtap='_handleOneUploadCancel' data-index='{{uploadIndex}}' data-object-name='{{upload.objectName}}'></icon>
+        </image>
+      </view>
+    </block>
+    <view class='__one-upload-btn' style='{{_oneUpload.formatStyle(upload.size)}}' catchtap='_handleOneUpload' data-object-name='{{upload.objectName}}' data-upload-name='{{upload.uploadName}}' data-upload-url='{{upload.uploadUrl}}' data-pre-url-name='{{upload.preUrlName}}' data-upload-count='{{upload.count || 1}}'
+      hidden='{{upload.hidden}}'>
+      <view class='one-icon one-icon-plus'></view>
+    </view>
+  </view>
+</template>
+
+<wxs module="_oneUpload">
+  var formatStyle = function(size) {
+    if (size === undefined) {
+      return ''
+    } else {
+      return 'width:' + size + 'rpx;' + 'height:' + size + 'rpx;'
+    }
+  }
+  module.exports.formatStyle = formatStyle
+</wxs>

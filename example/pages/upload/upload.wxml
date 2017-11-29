@@ -1,0 +1,17 @@
+<!--pages/upload/upload.wxml-->
+<import src="/OneUI/upload/index.wxml" />
+<import src="/OneUI/table/index.wxml" />
+<view class='container'>
+  <view class='one-title'>上传组件</view>
+  <view class='upload-wrap'>
+    <template is="one-upload" data="{{upload}}"></template>
+  </view>
+  <view class='one-title'>使用说明</view>
+  <view class='one-subtitle'>上传组件传入唯一对象参数 {upload}，该组件的预览图是使用后端返回的完整链接实现的，所以后端返回的键值中，必须要有拼接好的图片 url。</view>
+  <view class='one-title'>特别说明</view>
+  <view class='one-subtitle'>支持的后端返回的数据格式可以是： 1. 纯对象，如：{url: 'xxx', base_url: 'xxx'}。2. 数据在对象里的 data 里，如： { data: { url: 'xxx', base_url: 'xxx' } }。键值无所谓，主要是数据格式。若是其他格式，请改源码。</view>
+  <template is="one-table" data="{{table: uploadObj}}"></template>
+  <view class='margin'></view>
+  <view class='one-title'>Event 事件</view>
+  <template is="one-table" data="{{table: uploadEvent}}"></template>
+</view>

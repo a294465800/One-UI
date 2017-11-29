@@ -1,0 +1,13 @@
+/* pages/upload/upload.wxss */
+@import '/OneUI/icon/index.wxss';
+@import '/OneUI/upload/index.wxss';
+@import '/OneUI/table/index.wxss';
+
+.upload-wrap {
+  margin-top: 20px;
+}
+
+.margin {
+  margin-top: 20px;
+}
+

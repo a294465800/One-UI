@@ -1,12 +1,11 @@
 /* 图标样式 */
-
 @font-face {
   font-family: 'one-icon'; 
-  src: url('//at.alicdn.com/t/font_480478_j9x66bvnsq2p4x6r.eot');
-  src: url('//at.alicdn.com/t/font_480478_j9x66bvnsq2p4x6r.eot?#iefix') format('embedded-opentype'),
-         url('//at.alicdn.com/t/font_480478_j9x66bvnsq2p4x6r.woff') format('woff'),
-         url('//at.alicdn.com/t/font_480478_j9x66bvnsq2p4x6r.ttf') format('truetype'),
-         url('//at.alicdn.com/t/font_480478_j9x66bvnsq2p4x6r.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_480478_wztim0iffqkc5wmi.eot');
+  src: url('//at.alicdn.com/t/font_480478_wztim0iffqkc5wmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_480478_wztim0iffqkc5wmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_480478_wztim0iffqkc5wmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_480478_wztim0iffqkc5wmi.svg#iconfont') format('svg');
 }
 
 .one-icon {
@@ -29,7 +28,7 @@
   line-height: 1em;
 }
 
-@keyframes rotating {
+@keyframes oneLoading {
   from {
     transform: rotate(0);
   }
@@ -41,17 +40,17 @@
 
 .one-icon-loading-dot::before {
   content: '\e600';
-  animation: rotating 1.2s linear infinite;
+  animation: oneLoading 1.5s linear infinite;
 }
 
-.one-icon-loading-bold-dot::before {
-  content: '\e63d';
-  animation: rotating 1.2s linear infinite;
+.one-icon-loading-flower::before {
+  content: '\e6df';
+  animation: oneLoading 1.5s linear infinite;
 }
 
-.one-icon-loading-circle::before {
-  content: '\eb0e';
-  animation: rotating 1.2s linear infinite;
+.one-icon-loading-line::before {
+  content: '\e618';
+  animation: oneLoading 1.5s linear infinite;
 }
 
 .one-icon-arrow::before {
@@ -65,4 +64,8 @@
 
 .one-icon-arrow-thin::before {
   content: '\e602';
+}
+
+.one-icon-plus::before {
+  content: '\e629';
 }

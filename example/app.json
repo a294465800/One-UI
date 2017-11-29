@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/upload/upload",
+    "pages/icon/icon",
     "pages/radio/radio",
     "pages/form/form",
     "pages/list/list",
-    "pages/icon/icon",
     "pages/table/table",
     "pages/tab/tab",
     "pages/capsule/capsule",
