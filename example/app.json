@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/counter/counter",
     "pages/popup/popup",
     "pages/button/button",
     "pages/upload/upload",

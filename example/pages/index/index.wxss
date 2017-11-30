@@ -3,6 +3,7 @@
 
 .container {
   padding: 0;
+  padding-bottom: 50px;
 }
 
 .navigator {
@@ -15,6 +16,7 @@
 .one-title {
   padding: 20rpx 30rpx;
   border: 0;
+  margin-top: 30px;
 }
 
 navigator {

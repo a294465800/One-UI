@@ -1,0 +1,17 @@
+<!--pages/counter/counter.wxml-->
+<import src="/OneUI/counter/index.wxml" />
+<import src="/OneUI/table/index.wxml" />
+
+<view class='container'>
+  <view class='one-title'>基础使用</view>
+  <template is="one-counter" data="{{counter: counter}}"></template>
+  <view class='one-title'>小尺寸</view>
+  <template is="one-counter" data="{{counter: counter1}}"></template>
+  <view class='one-title'>disabled</view>
+  <template is="one-counter" data="{{counter: counter2}}"></template>
+  <view class='one-title'>使用说明</view>
+  <view class='one-subtitle'>模版组件传入唯一对象参数 { counter }</view>
+  <template is="one-table" data="{{table: counterObj}}"></template>
+  <view class='one-title' style='margin-top: 30px;'>Event 事件</view>
+  <template is="one-table" data="{{table: counterEvent}}"></template>
+</view>

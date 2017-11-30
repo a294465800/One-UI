@@ -19,7 +19,7 @@
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
     <navigator url='/pages/popup/popup'>
-      <view>Popup 弹出</view>
+      <view>Popup 弹出层</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
   </view>
@@ -27,6 +27,10 @@
   <view class='navigator'>
     <navigator url='/pages/capsule/capsule'>
       <view>Capsule 胶囊</view>
+      <view class='one-icon one-icon-arrow-rotate'></view>
+    </navigator>
+    <navigator url='/pages/counter/counter'>
+      <view>Counter 计数器</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
     <navigator url='/pages/list/list'>

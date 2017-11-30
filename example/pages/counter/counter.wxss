@@ -1,0 +1,11 @@
+/* pages/counter/counter.wxss */
+@import '/OneUI/counter/index.wxss';
+@import '/OneUI/table/index.wxss';
+
+.one-title {
+  margin-bottom: 20px;
+}
+
+.__one-counter {
+  margin-bottom: 40px;
+}

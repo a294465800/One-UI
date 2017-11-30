@@ -120,7 +120,7 @@ Page(Object.assign({}, One.Radio, One.Table, {
           name: 'handleOneRadioChange',
           desc: '单选选中时触发',
           type: 'Function',
-          choose: 'value',
+          choose: '( value )',
           default: '选中的项'
         },
       ],
