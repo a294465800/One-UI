@@ -2,7 +2,7 @@
 <view class='container'>
   <button class='one-btn hollow' catchtap='toggleTop'>上部弹出</button>
   <button class='one-btn hollow' catchtap='toggleMiddle'>中部弹出</button>
-  <button class='one-btn hollow' catchtap='toggleBottom'>下部弹出</button>
+  <button class='one-btn hollow' catchtap='toggleBottom'>底部弹出</button>
 
 
   <!-- 每个部分其实都只有就两个 class，一个遮罩层：one-popup-mask；一个对应的 content 层： one-popup-top/middle/bottom  -->
