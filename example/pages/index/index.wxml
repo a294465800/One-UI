@@ -18,6 +18,10 @@
       <view>Icon 图标</view>
       <view class='one-icon one-icon-arrow-rotate'></view>
     </navigator>
+    <navigator url='/pages/popup/popup'>
+      <view>Popup 弹出</view>
+      <view class='one-icon one-icon-arrow-rotate'></view>
+    </navigator>
   </view>
   <view class='one-title'>Template 组件</view>
   <view class='navigator'>

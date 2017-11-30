@@ -1,0 +1,37 @@
+<!--pages/popup/popup.wxml-->
+<view class='container'>
+  <button class='one-btn hollow' catchtap='toggleTop'>上部弹出</button>
+  <button class='one-btn hollow' catchtap='toggleMiddle'>中部弹出</button>
+  <button class='one-btn hollow' catchtap='toggleBottom'>下部弹出</button>
+
+
+  <!-- 每个部分其实都只有就两个 class，一个遮罩层：one-popup-mask；一个对应的 content 层： one-popup-top/middle/bottom  -->
+
+  <!--上部弹出  -->
+  <view class='{{showTop?"one-popup-show":""}}'>
+    <view class='one-popup-mask' catchtap='toggleTop'></view>
+    <view class='one-popup-top'>
+      <view style='height: 100px;line-height: 100px;text-align: center'>上部弹出</view>
+    </view>
+  </view>
+  <!--上部弹出  -->
+
+  <!--中部弹出  -->
+  <view class='{{showMiddle?"one-popup-show":""}}'>
+    <view class='one-popup-mask' catchtap='toggleMiddle'></view>
+    <view class='one-popup-middle'>
+      <!--中部需要自行加宽高、背景色、居中等样式  -->
+      <view style='height: 100px;line-height: 100px;text-align: center; width: 80%;background: #fff; margin:0 auto;'>中部弹出</view>
+    </view>
+  </view>
+  <!--中部弹出  -->
+
+  <!--底部弹出  -->
+  <view class='{{showBottom?"one-popup-show":""}}'>
+    <view class='one-popup-mask' catchtap='toggleBottom'></view>
+    <view class='one-popup-bottom'>
+      <view style='height: 100px;line-height: 100px;text-align: center'>底部弹出</view>
+    </view>
+  </view>
+  <!--底部弹出  -->
+</view>

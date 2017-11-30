@@ -1,0 +1,15 @@
+/* pages/popup/popup.wxss */
+@import '/OneUI/button/index.wxss';
+@import '/OneUI/popup/index.wxss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .one-btn {
+  margin: 10px 0;
+  width: 90%;
+}

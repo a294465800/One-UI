@@ -1,0 +1,69 @@
+
+/* popup */
+
+.one-popup-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: none;
+}
+
+.one-popup-show .one-popup-mask {
+  display: block;
+}
+
+/*上部弹出  */
+
+.one-popup-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 750rpx;
+  transform: translateY(-150%);
+  background-color: #fff;
+  transition: all 0.4s ease;
+  z-index: 1001;
+}
+
+.one-popup-show .one-popup-top {
+  transform: translateY(0);
+}
+
+/*中部弹出  */
+
+.one-popup-middle {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  width: 750rpx;
+  transition: opacity 0.4s ease-out;
+  z-index: 1001;
+}
+
+.one-popup-show .one-popup-middle {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 底部弹出 */
+
+.one-popup-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 750rpx;
+  transform: translateY(150%);
+  background-color: #fff;
+  transition: all 0.4s ease;
+  z-index: 1001;
+}
+
+.one-popup-show .one-popup-bottom {
+  transform: translateY(0);
+}

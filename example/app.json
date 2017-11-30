@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/popup/popup",
+    "pages/button/button",
     "pages/upload/upload",
     "pages/icon/icon",
     "pages/radio/radio",
@@ -9,7 +11,6 @@
     "pages/table/table",
     "pages/tab/tab",
     "pages/capsule/capsule",
-    "pages/button/button",
     "pages/badge/badge"
   ],
   "window": {

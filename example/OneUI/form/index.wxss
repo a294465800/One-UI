@@ -32,7 +32,6 @@
   bottom: 0;
   border-bottom: 1px solid #e5e5e5;
   transform: scaleY(0.5);
-  z-index: 2;
 }
 
 .one-label-control:last-child::after {

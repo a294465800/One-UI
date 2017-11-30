@@ -11,7 +11,7 @@ Page(Object.assign({}, One.Upload, One.Table, {
       count: 0,
       size: 200,
       uploadUrl: 'https://www.imagine-yipin.com/UploadFiles.aspx',
-      // images: [],
+      images: [],
       hidden: false
     },
 
