@@ -1,0 +1,10 @@
+<!--pages/test/test.wxml-->
+<view class='container'>
+  <view class='div'>
+    <view class='div2' style='{{rollNotice.animation}}'>
+      <view class='p' wx:for="{{rollNotice.rollData}}" wx:key="id" wx:for-item="rollItem">{{rollItem.title}}</view>
+       <view class='p'>{{rollNotice.rollData[0].title}}</view> 
+    </view>
+  </view>
+
+</view>

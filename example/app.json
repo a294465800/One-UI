@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/popup/popup",
+    "pages/test/test",
     "pages/index/index",
+    "pages/popup/popup",
     "pages/counter/counter",
     "pages/button/button",
     "pages/upload/upload",
