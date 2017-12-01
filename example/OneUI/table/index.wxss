@@ -67,7 +67,7 @@
 }
 
 .__one-table-scroll .__one-table-th, .__one-table-scroll .__one-table-td {
-  min-width: 100px;
+  min-width: 130px;
   max-width: 150px;
 }
 

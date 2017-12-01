@@ -4,7 +4,7 @@ function oneRollNoticeObject(rollName) {
   let start = rollData.start || 0
   const length = rollData.rollData.length
   const height = 20
-  const duration = 1000
+  const duration = 500
 
 
   const timer = setInterval(() => {
@@ -29,7 +29,7 @@ function oneRollNoticeObject(rollName) {
         [`${rollName}.animation`]: `transform: translate3d(0, ${start}px, 0);transition: all ${duration}ms;`
       })
     }
-  }, (duration + 1000))
+  }, (duration + 1500))
 }
 
 Page({

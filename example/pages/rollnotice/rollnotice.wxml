@@ -1,0 +1,29 @@
+<!--pages/rollnotice/rollnotice.wxml-->
+<import src="/OneUI/rollnotice/index.wxml" />
+<import src="/OneUI/table/index.wxml" />
+
+<view class='container'>
+  <view class='padding'>
+    <view class='one-title'>基础使用</view>
+  </view>
+  <view class='wrap'>
+    <template is="one-rollNotice" data="{{rollNotice: rollNotice}}"></template>
+  </view>
+  <view class='margin'></view>
+  <view class='padding'>
+    <view class='one-title'>颜色、高度自定义</view>
+  </view>
+  <view class='wrap2'>
+    <view>组合使用：</view>
+    <template is="one-rollNotice" data="{{rollNotice: rollNotice1}}"></template>
+  </view>
+  <view class='padding'>
+    <view class='one-title'>使用说明</view>
+    <view class='one-subtitle'>模版组件传入唯一对象参数 { rollNotice }，由于是通过在 onLoad 生命周期函数中使用定时器，周期更改style 实现的，所以该组件使用需要在 onLoad 中手动执行，并传入 Page 的上下文，如 One.RollNotice.init.call(this, 'rollNotice')。同时需要传入对象名称。</view>
+  </view>
+  <template is="one-table" data="{{table: rollObject}}"></template>
+  <view class='padding'>
+    <view class='one-title'>Event 事件</view>
+  </view>
+  <template is="one-table" data="{{table: rollEvent}}"></template>
+</view>

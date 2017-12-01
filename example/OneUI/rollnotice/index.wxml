@@ -1,0 +1,17 @@
+<template name="one-rollNotice">
+  <view class='__one-rollNotice' style='{{oneRollNotice.resetStyle(rollNotice)}}'>
+    <view class='__one-rollNotice-wrap' catchtap='handleOneRollNoticeTap' data-roll-name='{{rollNotice.rollName}}' style='{{rollNotice._animation}}'>
+      <view class='__one-rollNotice-item' wx:for="{{rollNotice.rollData}}" wx:key="{{rollNotice.rollKey.id}}" wx:for-item="rollItem" data-index='{{index}}' data-id='{{rollItem[rollNotice.rollKey.id]}}'>{{rollItem[rollNotice.rollKey.title]}}</view>
+      <view class='__one-rollNotice-item' data-index='0' data-id='{{rollItem[rollNotice.rollKey.id]}}'>{{rollNotice.rollData[0][rollNotice.rollKey.title]}}</view>
+    </view>
+  </view>
+</template>
+
+<wxs module="oneRollNotice">
+  var resetStyle = function(data) {
+    var height = data.height ? ('height:' + data.height + 'px;line-height:' + data.height + 'px;') : ''
+    var color = data.color ? ('color:' + data.color + ';') : ''
+    return height + color
+  }
+  module.exports.resetStyle = resetStyle
+</wxs>

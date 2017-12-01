@@ -1,0 +1,21 @@
+/* rollNotice */
+
+.__one-rollNotice {
+   min-height: 30px; 
+  height: 30px;
+  background-color: transparent;
+  overflow: hidden;
+  line-height: 30px;
+}
+
+.__one-rollNotice-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100%;
+}
+
+.__one-rollNotice-item {
+  height: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+}
