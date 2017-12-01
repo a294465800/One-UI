@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/step/step",
     "pages/index/index",
     "pages/rollnotice/rollnotice",
     "pages/test/test",

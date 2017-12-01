@@ -1,0 +1,23 @@
+<!--pages/step/step.wxml-->
+<view class='container'>
+  <view class='one-title'>基本用法</view>
+  <view class='__one-step'>
+    <view class='__one-step-item'>
+      <icon class='__one-step-item-circle-icon' size='16' color='#04be02' type='success'>
+        <view class='__one-step-item-text'>步骤一</view>
+      </icon>
+      <view class='__one-step-item-line'></view>
+      <icon class='__one-step-item-circle-icon' size='16' color='#04be02' type='success'>
+        <view class='__one-step-item-text'>步骤二</view>
+      </icon>
+      <view class='__one-step-item-line'></view>
+      <view class='__one-step-item-circle'>3
+        <view class='__one-step-item-text'>步骤三</view>
+      </view>
+      <view class='__one-step-item-line'></view>
+      <view class='__one-step-item-circle one-icon one-icon-right'>
+        <view class='__one-step-item-text'>步骤四</view>
+      </view>
+    </view>
+  </view>
+</view>

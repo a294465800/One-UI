@@ -1,0 +1,52 @@
+/* pages/step/step.wxss */
+@import '/OneUI/icon/index.wxss';
+
+.one-title {
+  margin-bottom: 10px;
+}
+
+/* step */
+
+.__one-step-item {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.__one-step-item-circle-icon {
+  position: relative;
+}
+
+.__one-step-item-circle {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #04be02;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px!important;
+  color: #fff;
+}
+
+.__one-step-item-circle::before {
+  font-size: 12px!important;
+}
+
+.__one-step-item-text {
+  color: #04be02;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 120%);
+  white-space: nowrap;
+}
+
+.__one-step-item-line {
+  height: 2px;
+  background-color: #04be02;
+  margin: 0 10px;
+  width: 120rpx;
+}

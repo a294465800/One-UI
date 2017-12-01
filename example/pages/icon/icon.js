@@ -10,6 +10,7 @@ Page({
       'one-icon-arrow-rotate',
       'one-icon-arrow-thin',
       'one-icon-plus',
+      'one-icon-right',
     ]
   },
 
