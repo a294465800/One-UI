@@ -4,58 +4,62 @@
   <view class='navigator'>
     <navigator url='/pages/badge/badge'>
       <view>Badge 徽章</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/button/button'>
       <view>Button 按钮</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/form/form'>
       <view>Form 表单</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/icon/icon'>
       <view>Icon 图标</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/popup/popup'>
       <view>Popup 弹出层</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
   </view>
   <view class='one-title'>Template 组件</view>
   <view class='navigator'>
     <navigator url='/pages/capsule/capsule'>
       <view>Capsule 胶囊</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/counter/counter'>
       <view>Counter 计数器</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/list/list'>
       <view>List 列表</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/radio/radio'>
       <view>Radio 单选</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/rollnotice/rollnotice'>
       <view>RollNotice 滚动公告</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
+    </navigator>
+    <navigator url='/pages/step/step'>
+      <view>Step 进度条</view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/tab/tab'>
       <view>Tab 导航条</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/table/table'>
       <view>Table 表格</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
     <navigator url='/pages/upload/upload'>
       <view>Upload 上传组件</view>
-      <view class='one-icon one-icon-arrow-rotate'></view>
+      <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
   </view>
 </view>

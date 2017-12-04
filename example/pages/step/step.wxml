@@ -1,23 +1,14 @@
 <!--pages/step/step.wxml-->
+<import src="/OneUI/step/index.wxml" />
+<import src="/OneUI/table/index.wxml" />
 <view class='container'>
-  <view class='one-title'>基本用法</view>
-  <view class='__one-step'>
-    <view class='__one-step-item'>
-      <icon class='__one-step-item-circle-icon' size='16' color='#04be02' type='success'>
-        <view class='__one-step-item-text'>步骤一</view>
-      </icon>
-      <view class='__one-step-item-line'></view>
-      <icon class='__one-step-item-circle-icon' size='16' color='#04be02' type='success'>
-        <view class='__one-step-item-text'>步骤二</view>
-      </icon>
-      <view class='__one-step-item-line'></view>
-      <view class='__one-step-item-circle'>3
-        <view class='__one-step-item-text'>步骤三</view>
-      </view>
-      <view class='__one-step-item-line'></view>
-      <view class='__one-step-item-circle one-icon one-icon-right'>
-        <view class='__one-step-item-text'>步骤四</view>
-      </view>
-    </view>
-  </view>
+  <view class='one-title'>主题一</view>
+  <template is="one-step" data="{{step: step}}"></template>
+  <view class='margin'></view>
+  <view class='one-title'>主题二</view>
+  <template is="one-step" data="{{step: step2}}"></template>
+  <view class='margin'></view>
+  <view class='one-title'>使用说明</view>
+  <view class='one-subtitle'>模版组件传入唯一参数 { step }，可选颜色，数据键值名称必填</view>
+  <template is="one-table" data="{{table: stepObj}}"></template>
 </view>

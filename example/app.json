@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/step/step",
     "pages/index/index",
+    "pages/step/step",
     "pages/rollnotice/rollnotice",
     "pages/test/test",
     "pages/popup/popup",
