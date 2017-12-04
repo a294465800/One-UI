@@ -1,12 +1,12 @@
 /* 图标样式 */
 
 @font-face {
-  font-family: 'one-icon';
-  src: url('//at.alicdn.com/t/font_480478_m48xaxjnuvhuayvi.eot');
-  src: url('//at.alicdn.com/t/font_480478_m48xaxjnuvhuayvi.eot?#iefix') format('embedded-opentype'),
-         url('//at.alicdn.com/t/font_480478_m48xaxjnuvhuayvi.woff') format('woff'),
-         url('//at.alicdn.com/t/font_480478_m48xaxjnuvhuayvi.ttf') format('truetype'),
-         url('//at.alicdn.com/t/font_480478_m48xaxjnuvhuayvi.svg#iconfont') format('svg');
+  font-family: 'one-icon';  /* project id 480478 */
+  src: url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.eot');
+  src: url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.svg#iconfont') format('svg');
 }
 
 .one-icon {
@@ -71,6 +71,9 @@
   content: '\e629';
 }
 
-.one-icon-right::before {
+.one-icon-arrow-right::before {
   content: '\e60a';
+}
+.one-icon-left::before {
+  content: '\e878';
 }

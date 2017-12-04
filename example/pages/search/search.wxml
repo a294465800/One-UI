@@ -1,0 +1,41 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+  <view class='one-title'>行内模式</view>
+  <view class='search-wrap'>
+    <view class='__one-serach-theme1'>
+      <label class='__one-search-theme1-label'>
+        <icon type='search' size='14'></icon>
+        <input class='__one-search-theme1-input' bindinput='_handleOneSearchInput' placeholder='{{search.placeholder}}' value='{{search.value}}'></input>
+        <icon class='__one-search-theme1-cancel-icon {{search.value.length?"active":""}}' type='clear' size='14' catchtap='_handleOneSearchCancel'></icon>
+      </label>
+      <view class='__one-search-theme1-cancel {{search.value.length?"active":""}}' catchtap='_handleOneSearchCancel'>取消</view>
+    </view>
+  </view>
+
+  <view class='margin'></view>
+  <view class='one-title'>展开模式</view>
+  <view class='__one-search-theme2 {{search.expand?"active":""}}'>
+    <label class='__one-search-theme2-label' catchtap='{{search.expand?"":"_handleOneSearchExpand"}}'>
+      <view class='__one-search-theme2-arrow one-icon one-icon-left' catchtap='_handleOneSearchExpand'></view>
+      <icon class='__one-search-theme2-btn-icon' type='search' size='14'></icon>
+      <input class='__one-search-theme2-input' value='{{search.value}}' placeholder='搜索' bindinput='_handleOneSearchInput'>
+      <icon class='__one-search-theme2-cancel-icon {{search.value.length?"active":""}}' type='clear' size='14' catchtap='_handleOneSearchCancel'></icon>
+      </input>
+      <view class='__one-search-theme2-input-fake' catchtap='{{search.expand?"_handleOneSearchConfirm":""}}'>搜索</view>
+    </label>
+    <view class='__one-search-theme2-mask'>
+      <block wx:if="{{search.history}}">
+        <view class='__one-search-theme2-title'>最近搜索</view>
+        <view class='__one-search-theme2-tips-list' catchtap='_handleOneSearchTipBtn'>
+          <view class='__one-search-theme2-tips-item' wx:for="{{search.histroyData}}" wx:key="{{tipItem}}" wx:for-item="tipItem" data-value='{{tipItem}}'>{{tipItem}}</view>
+        </view>
+      </block>
+      <block wx:if="{{search.hot}}">
+        <view class='__one-search-theme2-title'>热门搜索</view>
+        <view class='__one-search-theme2-tips-list' catchtap='_handleOneSearchTipBtn'>
+          <view class='__one-search-theme2-tips-item' wx:for="{{search.hotData}}" wx:key="{{tipItem}}" wx:for-item="tipItem" data-value='{{tipItem}}'>{{tipItem}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

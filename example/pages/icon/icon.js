@@ -9,8 +9,9 @@ Page({
       'one-icon-arrow',
       'one-icon-arrow-rotate',
       'one-icon-arrow-thin',
+      'one-icon-arrow-right',
       'one-icon-plus',
-      'one-icon-right',
+      'one-icon-left',
     ]
   },
 
