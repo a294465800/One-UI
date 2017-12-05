@@ -45,6 +45,10 @@
       <view>RollNotice 滚动公告</view>
       <view class='one-icon one-icon-arrow-thin'></view>
     </navigator>
+    <navigator url='/pages/search/search'>
+      <view>Search 搜索</view>
+      <view class='one-icon one-icon-arrow-thin'></view>
+    </navigator>
     <navigator url='/pages/step/step'>
       <view>Step 进度条</view>
       <view class='one-icon one-icon-arrow-thin'></view>
