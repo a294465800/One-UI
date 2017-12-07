@@ -6,11 +6,11 @@ Page(Object.assign({}, One.Upload, One.Table, {
 
     upload: {
       objectName: 'upload',
-      uploadName: 'fileImages',
-      preUrlName: 'filePath',
+      uploadName: 'image',
+      preUrlName: 'url',
       count: 0,
       size: 200,
-      uploadUrl: 'https://www.imagine-yipin.com/UploadFiles.aspx',
+      uploadUrl: 'http://www.shiningjack.com/api/v1/test/upload/',
       images: [],
       hidden: false
     },
