@@ -1,0 +1,43 @@
+.__one-tab {
+  background-color: #fff;
+  box-shadow: 0 1px 1px #ccc;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+}
+
+.__one-tab-scroll {
+  height: auto;
+}
+
+.__one-tab-scroll-wrap {
+  display: flex;
+}
+
+.__one-tab-item {
+  flex: 1;
+  text-align: center;
+}
+
+.__one-tab-scroll .__one-tab-item {
+  min-width: 80px;
+}
+
+.__one-tab-item-name {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  word-break: keep-all;
+}
+
+.__one-tab-item-name.active {
+  border-bottom: 2px solid #ccc;
+}
+
+.__one-tab-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}

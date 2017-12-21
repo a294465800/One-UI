@@ -1,0 +1,29 @@
+
+<template name="one-tab">
+  <view class='__one-tab {{tab.fixed?"__one-tab-fixed":""}}' style='font-size: {{tab.fontSize}}px'>
+    <block wx:if="{{tab.scroll}}">
+      <scroll-view scroll-x class='__one-tab-scroll'>
+        <view class='__one-tab-scroll-wrap'>
+          <template is="one-tab-list" data="{{tab}}"></template>
+        </view>
+      </scroll-view>
+    </block>
+    <block wx:else>
+      <template is="one-tab-list" data="{{tab}}"></template>
+    </block>
+  </view>
+</template>
+
+
+<!-- tab导航列表模版 -->
+<template name="one-tab-list">
+  <view class='__one-tab-item' wx:for="{{tab.list}}" wx:for-item="tabItem" wx:for-index="tabIndex" wx:key="id">
+    <block wx:if="{{tab.selected == tabItem.id}}">
+      <view class='__one-tab-item-name active' style='border-color:{{tab.color}};color:{{tab.color}};height: {{tab.height}}px;line-height: {{tab.height}}px'>{{tabItem.name}}</view>
+    </block>
+    <block wx:else>
+      <view class='__one-tab-item-name' style='height: {{tab.height}}px;line-height: {{tab.height}}px' data-id='{{tabItem.id}}' data-tab-name='{{tab.tabName}}' data-index='{{tabIndex}}' catchtap='_handleOneTabChange'>{{tabItem.name}}</view>
+    </block>
+  </view>
+</template>
+<!-- /tab导航列表模版 -->

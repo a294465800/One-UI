@@ -1,0 +1,23 @@
+
+/* 单选样式 */
+
+.__one-radio-fake {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.__one-radio-fake-text {
+  transition: color 0.2s;
+}
+
+.__one-radio-icon {
+  opacity: 0;
+}
+
+.__one-radio-icon.active {
+  opacity: 1;
+  transition: opacity 0.4s;
+}

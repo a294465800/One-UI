@@ -1,0 +1,79 @@
+/* 图标样式 */
+
+@font-face {
+  font-family: 'one-icon';  /* project id 480478 */
+  src: url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.eot');
+  src: url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_480478_bq6mhgrozmxfajor.svg#iconfont') format('svg');
+}
+
+.one-icon {
+  display: inline-block;
+}
+
+.one-icon::before {
+  font-family: "one-icon" !important;
+  font-size: 18px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+}
+
+@keyframes oneLoading {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.one-icon-loading-dot::before {
+  content: '\e600';
+  animation: oneLoading 1.5s linear infinite;
+}
+
+.one-icon-loading-flower::before {
+  content: '\e6df';
+  animation: oneLoading 1.5s linear infinite;
+}
+
+.one-icon-loading-line::before {
+  content: '\e618';
+  animation: oneLoading 1.5s linear infinite;
+}
+
+.one-icon-arrow::before {
+  content: '\e601';
+}
+
+.one-icon-arrow-rotate::before {
+  content: '\e601';
+  transform: rotate(-90deg);
+}
+
+.one-icon-arrow-thin::before {
+  content: '\e602';
+}
+
+.one-icon-plus::before {
+  content: '\e629';
+}
+
+.one-icon-arrow-right::before {
+  content: '\e60a';
+}
+.one-icon-left::before {
+  content: '\e878';
+}

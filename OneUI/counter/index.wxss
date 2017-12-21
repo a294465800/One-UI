@@ -1,0 +1,76 @@
+/* counter */
+
+.__one-counter {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.__one-counter::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.__one-counter-btn {
+  box-sizing: content-box;
+  float: left;
+  border: 1px solid #999;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.__one-counter-btn:active {
+  background-color: #eee;
+}
+
+.__one-counter-input {
+  box-sizing: content-box;
+  float: left;
+  border: 1px solid #999;
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.__one-counter-small {
+  font-size: 12px;
+}
+
+.__one-counter-small .__one-counter-btn,
+.__one-counter-small .__one-counter-input {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  min-height: 25px;
+}
+
+.__one-counter-btn-plus {
+  border-left: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.__one-counter-btn-minus {
+  border-right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.__one-counter-btn-disabled {
+  opacity: 0.4;
+}
+
+.__one-counter-disabled .__one-counter-btn-disabled {
+  opacity: 1;
+}
+
+.__one-counter-disabled {
+  opacity: 0.4;
+}

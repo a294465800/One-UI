@@ -1,0 +1,45 @@
+<template name="one-table">
+  <block wx:if="{{table.scroll}}">
+    <scroll-view scroll-x class='__one-table-scroll'>
+      <view class='__one-table {{table.border?"border":""}} {{table.align?table.align:""}}'>
+        <template is="one-table-head" data="{{table}}"></template>
+        <template is="one-table-body" data="{{table}}"></template>
+      </view>
+    </scroll-view>
+  </block>
+  <block wx:else>
+    <view class='__one-table {{table.border?"border":""}} {{table.align?table.align:""}}'>
+      <template is="one-table-head" data="{{table}}"></template>
+      <template is="one-table-body" data="{{table}}"></template>
+    </view>
+  </block>
+</template>
+
+<!-- 表头 -->
+<template name="one-table-head">
+  <view class='__one-table-head'>
+    <view class='__one-table-tr'>
+      <view class='__one-table-th' wx:for="{{table.head}}" wx:for-item="headItem" wx:key="{{headItem}}">{{headItem}}</view>
+    </view>
+  </view>
+</template>
+<!-- /表头 -->
+
+<!-- 表内容  -->
+<template name="one-table-body">
+  <block wx:if="{{table.body.length}}">
+    <view class='__one-table-body'>
+      <view class='__one-table-tr {{table.currentIndex === bodyIndex?"active":""}}' wx:for="{{table.body}}" wx:for-item="bodyItem" wx:for-index="bodyIndex" wx:key="{{table.rowKey?bodyItem[table.rowKey]:bodyItem.id}}" catchtap='_handleOneTableRowActive' data-table-name='{{table.tableName}}'
+        data-index='{{bodyIndex}}'>
+        <block wx:if="{{table.head[0] == '#'}}">
+          <view class='__one-table-td'>{{bodyIndex}}</view>
+        </block>
+        <view class='__one-table-td' wx:for="{{table.bodyKey}}" wx:for-item="keyName" wx:key="{{keyName}}">{{bodyItem[keyName]}}</view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='__one-table-empty'>{{table.tips || '暂无数据'}}</view>
+  </block>
+</template>
+<!-- /表内容  -->

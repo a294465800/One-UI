@@ -1,0 +1,68 @@
+<template name="one-step">
+  <block wx:if="{{step.theme === 'two'}}">
+    <!-- 主题二 -->
+    <view class='__one-step-theme2-wrap'>
+      <view class='__one-step-theme2'>
+        <block wx:for="{{step.steps}}" wx:for-item="stepItem" wx:for-index="stepIndex" wx:key="{{step.stepKey.id}}">
+          <block wx:if="{{stepIndex === 0}}">
+            <view class='__one-step-theme2-circle {{stepItem[step.stepKey.state] <= step.state?"active":""}}' style='{{stepItem[step.stepKey.state] <= step.state?("background-color:" + step.color):""}}'>
+              <view class='__one-step-theme2-text {{stepItem[step.stepKey.state] === step.state?"active":""}}'>{{stepItem[step.stepKey.title]}}</view>
+            </view>
+          </block>
+          <block wx:else>
+            <view class='__one-step-theme2-line'>
+              <view class='__one-step-theme2-line-ok {{stepItem[step.stepKey.state] <= step.state?"active":""}}' style='{{stepItem[step.stepKey.state] <= step.state?("background-color:" + step.color):""}}'></view>
+            </view>
+            <view class='__one-step-theme2-circle {{stepItem[step.stepKey.state] <= step.state?"active":""}}' style='{{stepItem[step.stepKey.state] <= step.state?("background-color:" + step.color):""}}'>
+              <view class='__one-step-theme2-text {{stepItem[step.stepKey.state] === step.state?"active":""}}' style='{{stepItem[step.stepKey.state] === step.state?("background-color:" + step.color):""}}'>{{stepItem[step.stepKey.title]}}
+              <view class='__one-step-theme2-arrow' style='{{stepItem[step.stepKey.state] === step.state?("border-top-color:" + (step.color || "#04be02")):""}}'></view>
+              </view>
+            </view>
+          </block>
+        </block>
+      </view>
+      <block wx:if="{{step.location}}">
+        <view class='__one-step-theme2-aside'>
+          <view class='__one-step-theme2-aside-text'>{{step.location.start}}</view>
+          <view class='__one-step-theme2-aside-text'>{{step.location.end}}</view>
+        </view>
+      </block>
+    </view>
+    <!-- /主题二 -->
+  </block>
+  <block wx:else>
+    <!-- 主题一 -->
+    <view class='__one-step-theme1'>
+      <block wx:for="{{step.steps}}" wx:for-item="stepItem" wx:for-index="stepIndex" wx:key="{{step.stepKey.id}}">
+        <block wx:if="{{stepIndex === 0}}">
+          <block wx:if="{{stepItem[step.stepKey.state] <= step.state}}">
+            <icon class='__one-step-theme1-circle-icon' size='16' color='{{step.color}}' type='success'>
+              <view class='__one-step-theme1-text __one-step-theme1-text-ok' style='{{step.color?("color:"+step.color):""}}'>{{stepItem[step.stepKey.title]}}</view>
+            </icon>
+          </block>
+          <block wx:else>
+            <view class='__one-step-theme1-circle'>{{stepIndex}}
+              <view class='__one-step-theme1-text'>{{stepItem[step.stepKey.title]}}</view>
+            </view>
+          </block>
+        </block>
+        <block wx:else>
+          <view class='__one-step-theme1-line'>
+            <view class='__one-step-theme1-line-ok {{stepItem[step.stepKey.state] <= step.state?"active":""}}' style='{{step.color?("background-color:"+step.color):""}}'></view>
+          </view>
+          <block wx:if="{{stepItem[step.stepKey.state] <= step.state}}">
+            <icon class='__one-step-theme1-circle-icon' size='16' color='{{step.color}}' type='success'>
+              <view class='__one-step-theme1-text __one-step-theme1-text-ok' style='{{step.color?("color:"+step.color):""}}'>{{stepItem[step.stepKey.title]}}</view>
+            </icon>
+          </block>
+          <block wx:else>
+            <view class='__one-step-theme1-circle'>{{stepIndex}}
+              <view class='__one-step-theme1-text'>{{stepItem[step.stepKey.title]}}</view>
+            </view>
+          </block>
+        </block>
+      </block>
+    </view>
+    <!-- /主题一 -->
+  </block>
+</template>

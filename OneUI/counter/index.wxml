@@ -1,0 +1,7 @@
+<template name="one-counter">
+  <view class='__one-counter {{counter.size === "small"?"__one-counter-small":""}} {{counter.disabled?"__one-counter-disabled":""}}' catchtap='{{counter.disabled?"":"_handleOneCounterOperation"}}' data-counter-name='{{counter.counterName}}'>
+    <view class='__one-counter-btn __one-counter-btn-minus {{(counter.value <= counter.min)? "__one-counter-btn-disabled" : ""}}' data-type='minus'>-</view>
+    <input class='__one-counter-input' bindinput='_handleOneCounterInput' data-counter-name='{{counter.counterName}}' disabled='{{counter.min > counter.max || counter.disabled}}' type='number' value='{{counter.value || 0}}'></input>
+    <view class='__one-counter-btn __one-counter-btn-plus {{(counter.value >= counter.max)? "__one-counter-btn-disabled" : ""}}' data-type='plus'>+</view>
+  </view>
+</template>
